@@ -2,7 +2,7 @@
 
 This repository contains the source processing files for MicroLab, which is still being developed.
 
-## How to Use
+## Up and running
 
 1. Download the ZIP file from the repository **OR** git clone to a folder and then skip to **Step 3**.
 2. Extract the files.
