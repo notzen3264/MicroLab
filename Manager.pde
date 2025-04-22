@@ -110,11 +110,11 @@ class Manager {
          if (currentParticles < initialParticlesNum) {
             if (useInitialParticles) {
                if (useInstant) {
-                  man.randomParticles(initialParticlesNum, trueScreenWidth/5);
+                  man.randomParticles(initialParticlesNum, 425);
                   currentParticles += initialParticlesNum;
                } else {
                   int step = (int) random(0, 2);
-                  man.randomParticles(step, trueScreenWidth/5);
+                  man.randomParticles(step, 425);
                   currentParticles += step;
                }
             }

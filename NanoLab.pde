@@ -5,7 +5,7 @@ boolean useInstant = true;
 boolean useShaders = false;
 boolean useHandleCollisions = false;
 float viscosity = 0.85;
-float maxSpeed = 25;
+float maxSpeed = 50;
 float worldScale = 0.5;
 boolean isDesktop = true;
 int trueScreenWidth;
@@ -59,4 +59,3 @@ void mouseWheel(MouseEvent event) {
       
    println(zoom);
 }
-

@@ -11,7 +11,7 @@ class Mouse
    
    void update()
    { 
-      if (mousePressed && selected && !gui.justPressed)
+      if (mousePressed && selected && !gui.justPressed && mouseButton == LEFT)
       {
          noFill();
          stroke(255);
