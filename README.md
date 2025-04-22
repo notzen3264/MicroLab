@@ -1,3 +1,11 @@
 # MicroLab
 
 This repository contains the source processing files for MicroLab, which is still being developed.
+
+## How to Use
+
+1. Download the ZIP file from the repository **OR** git clone to a folder and then skip to **Step 3**.
+2. Extract the files.
+3. Open the extracted folder in your Processing IDE.
+4. Ensure all `.pde` files are present.
+5. You should be able to run the software.
