@@ -1,12 +1,12 @@
 int currentParticles = 0;
-int initialParticlesNum = 10000;
+int initialParticlesNum = 3000;
 boolean useInitialParticles = true;
 boolean useInstant = true;
 boolean useShaders = false;
 boolean useHandleCollisions = false;
 float viscosity = 0.85;
-float maxSpeed = 150000;
-float worldScale = 0.2;
+float maxSpeed = 25;
+float worldScale = 0.5;
 boolean isDesktop = true;
 int trueScreenWidth;
 int trueScreenHeight;
@@ -59,3 +59,4 @@ void mouseWheel(MouseEvent event) {
       
    println(zoom);
 }
+
