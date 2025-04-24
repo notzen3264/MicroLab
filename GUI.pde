@@ -226,7 +226,6 @@ class Button {
    
    void display() {
       if (this.isDisplay) {
-         // Using 100 directly to mimic guiColour functionality from GUI.
          fill(50);
          if (this.isSelected) {
             stroke(255);
