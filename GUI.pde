@@ -113,7 +113,7 @@ class GUI {
       text("Types: " + man.types.size(), space - guiRadius, 190);
       text("Max Speed: " + maxSpeed, space - guiRadius, 220);
       text("'Viscosity': " + viscosity, space - guiRadius, 250);
-      text("MicroLab v1.9.4 Desktop Supported", space - guiRadius, trueScreenHeight - 60);
+      text("MicroLab v1.9.5 | Simulate Virtual Life", space - guiRadius, trueScreenHeight - 60);
       text("By @notzen3264 (Github)", trueScreenWidth - (space - guiRadius) - 200, trueScreenHeight - 60);
    }
    
