@@ -7,16 +7,23 @@ class Particle {
       this.type = list.get(index);
    }
    
-   void show() {
+   void display() {
+      PVector newPos = man.translateCoords(pos.x, pos.y);
+      float newRadius = type.typeRadius * zoom;
+      
       noStroke();
-      if(useShaders) {
-         fill(type.c, 100);
-         ellipse((pos.x * zoom) + ((width - width * zoom) / 2) - offsetX, (pos.y * zoom) + ((height - height * zoom) / 2) - offsetY, type.typeRadius*2, type.typeRadius*2);
+      
+      colorMode(HSB, 360, 100, 100);
+
+      fill(type.c, 100, 100);
+      
+      if (useRect) {
+         rect(newPos.x - newRadius / 2, newPos.y - newRadius / 2, newRadius, newRadius);
+      } else {
+         ellipse(newPos.x, newPos.y, newRadius, newRadius);
       }
-      fill(type.c, 255);
-      float screenX = (pos.x - offsetX) * zoom + width / 2;
-      float screenY = (pos.y - offsetY) * zoom + height / 2;
-      ellipse(screenX, screenY, type.typeRadius * zoom, type.typeRadius * zoom);
+      
+      colorMode(RGB, 255, 255, 255);
    }
    
    void update(ArrayList<Particle> particles) {
@@ -50,10 +57,7 @@ class Particle {
          ratio = (this.forceEq(other) / distance);
       }
       
-      PVector increase = new PVector(
-      ratio * (this.pos.x - wrappedPos.x),
-      ratio * (this.pos.y - wrappedPos.y)
-      );
+      PVector increase = new PVector(ratio * (this.pos.x - wrappedPos.x), ratio * (this.pos.y - wrappedPos.y));
       return increase;
    }
    
@@ -92,10 +96,14 @@ class Particle {
       float dx = otherPos.x - this.pos.x;
       float dy = otherPos.y - this.pos.y;
       
-      if (dx > width / 2) dx -= width;
-      if (dx < -width / 2) dx += width;
-      if (dy > height / 2) dy -= height;
-      if (dy < -height / 2) dy += height;
+      if (dx > width / 2)
+      dx -= width;
+      if (dx < -width / 2)
+      dx += width;
+      if (dy > height / 2)
+      dy -= height;
+      if (dy < -height / 2)
+      dy += height;
       
       return new PVector(this.pos.x + dx, this.pos.y + dy);
    }
