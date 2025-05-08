@@ -9,3 +9,5 @@ This repository contains the source processing files for MicroLab, which is stil
 3. Open the extracted folder in your Processing IDE.
 4. Ensure all `.pde` files are present.
 5. You should be able to run the software.
+
+# Please refrain from claiming this software as your own.
