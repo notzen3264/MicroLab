@@ -11,3 +11,4 @@ This repository contains the source processing files for MicroLab, which is stil
 5. You should be able to run the software.
 
 # Please refrain from claiming this software as your own.
+@Lolitka123
