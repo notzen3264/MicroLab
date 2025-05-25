@@ -11,7 +11,4 @@ This repository contains the source processing files for MicroLab, which is stil
 5. You should be able to run the software.
 
 ## License
-This whole software and complete repository is licensed under the Blackwell License, which is available within the LICENSE file.
-
-# Please refrain from claiming this software as your own.
-Yes I'm looking at you @lolitka123
+This whole software and complete repository is licensed under the MIT License, which is available within the LICENSE file.
